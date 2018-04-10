@@ -1,0 +1,41 @@
+.container{
+
+}
+
+.topBar{
+    display: flex;
+    justify-content: space-around;
+}
+.blueTees{
+    display: flex;
+    justify-content: space-around;
+    color: darkblue;
+}
+.whiteTees{
+    display: flex;
+    justify-content: space-around;
+    /*color: white;*/
+    /*background-color: black;*/
+}
+.yellowTees{
+    display: flex;
+    justify-content: space-around;
+    color: orange;
+}
+.par{
+    display: flex;
+    justify-content: space-around;
+}
+.handicap{
+    display: flex;
+    justify-content: space-around;
+}
+.name{
+    display: flex;
+    justify-content: space-around;
+}
+.redTees{
+    display: flex;
+    justify-content: space-around;
+    color: red;
+}
