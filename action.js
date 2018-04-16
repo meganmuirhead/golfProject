@@ -10,7 +10,7 @@ function loadDoc() {
             console.log(course);
             let seltees = course.holes[0].tees;
             for(let i = 0; i< seltees.length; i++){
-                $("#teeSelect").append("<option value='" + i + "'>champion </option>");
+                $("#teeSelect").append("<option value='" + i + "'>" + seltees[i].teename + "</option>");
             }
             createCard();
         }

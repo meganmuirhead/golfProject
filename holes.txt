@@ -3,10 +3,10 @@
     "holes":[
         {"name": 1, "tees":[
 
-            {"champion": {"yardage": 312, "par": 5, "hcp": 3}},
-            {"pro": {"yardage": 295, "par": 5, "hcp": 2}},
-            {"men": {"yardage": 275, "par": 5, "hcp": 1}},
-            {"women": {"yardage": 265, "par": 5, "hcp": 1}}
+            {"teename": "champion", "teedata": {"yardage": 312, "par": 5, "hcp": 3}},
+            {"teename": "pro", "teedata": {"yardage": 295, "par": 5, "hcp": 2}},
+            {"teename": "men", "teedata": {"yardage": 275, "par": 5, "hcp": 1}},
+            {"teename": "women","teedata": {"yardage": 265, "par": 5, "hcp": 1}}
 
         ]},
         {"name": 2, "tees":[
