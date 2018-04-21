@@ -27,30 +27,33 @@
 //
 //     }
 // );
+var btn = document.getElementById("btn")
+var makeParDiv = document.getElementById("par1");
+
+btn.addEventListener("click", function () {
+    var loadCourseData = new XMLHttpRequest();
+    loadCourseData.open('GET', 'https://uxcobra.com/golfapi/course11819.txt');
+
+    loadCourseData.onload = function(){
+
+        var ourData = JSON.parse(loadCourseData.responseText);
+        console.log(ourData.data.holes);
+        renderHTML(ourData);
 
 
-loadCourseData
-
-var loadCourseData = new XMLHttpRequest();
-loadCourseData.open('GET', 'https://uxcobra.com/golfapi/course11819.txt');
-
-loadCourseData.onload = function(){
-
-var ourData = JSON.parse(loadCourseData.responseText);
-    console.log(ourData.data.holes);
-
-
-
-};
+    };
 loadCourseData.send();
 
-// var ourRequest = new XMLHttpRequest();
-// ourRequest.open('GET', 'https://learnwebcode.github.io/json-example/animals-1.json');
-//
-// ourRequest.onload = function(){
-//     var ourData = JSON.parse(ourRequest.responseText);
-//
-//     console.log(ourData[0].name);
-//
-// };
-// ourRequest.send();
+});
+
+function renderHTML(data) {
+    var htmlString = "";
+    var holes = data.data.holes;
+
+    for (i = 0; i < holes.length; i++){
+        var eId = "par" + holes[i].hole;
+        var parInserter = document.getElementById(eId);
+        parInserter.append(holes[i].teeBoxes[0].par)
+
+    }
+}
