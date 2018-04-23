@@ -1,3 +1,6 @@
+body {
+    background-image: url("grass.jpg");
+}
 .rTable {
     display: block;
     width: 100%;
