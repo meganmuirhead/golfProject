@@ -29,6 +29,7 @@
 // );
 var btn = document.getElementById("btn")
 var makeParDiv = document.getElementById("par1");
+var handBtn = document.getElementById("handbtn")
 
 btn.addEventListener("click", function () {
     var loadCourseData = new XMLHttpRequest();
@@ -45,15 +46,56 @@ btn.addEventListener("click", function () {
 loadCourseData.send();
 
 });
+handBtn.addEventListener("click", function () {
+    var loadCourseData = new XMLHttpRequest();
+    loadCourseData.open('GET', 'https://uxcobra.com/golfapi/course11819.txt');
+
+    loadCourseData.onload = function(){
+
+        var ourData = JSON.parse(loadCourseData.responseText);
+        console.log(ourData.data.holes);
+        renderHand(ourData);
+
+
+    };
+    loadCourseData.send();
+
+});
+
+
 
 function renderHTML(data) {
     var htmlString = "";
     var holes = data.data.holes;
 
+
     for (i = 0; i < holes.length; i++){
         var eId = "par" + holes[i].hole;
         var parInserter = document.getElementById(eId);
+        $(parInserter).empty();
         parInserter.append(holes[i].teeBoxes[0].par)
+        htmlString += holes;
+
 
     }
+    // document.getElementById(eId).innerHTML = htmlString;
+}
+
+
+
+function renderHand(data) {
+    var htmlString = "";
+    var holes = data.data.holes;
+
+
+    for (i = 0; i < holes.length; i++){
+        var eId = "par" + holes[i].hole;
+        var parInserter = document.getElementById(eId);
+        $(parInserter).empty();
+        parInserter.append(holes[i].teeBoxes[0].hcp)
+        htmlString += holes;
+
+
+    }
+    // document.getElementById(eId).innerHTML = htmlString;
 }
