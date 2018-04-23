@@ -89,7 +89,7 @@ function renderHand(data) {
 
 
     for (i = 0; i < holes.length; i++){
-        var eId = "par" + holes[i].hole;
+        var eId = "hand" + holes[i].hole;
         var parInserter = document.getElementById(eId);
         $(parInserter).empty();
         parInserter.append(holes[i].teeBoxes[0].hcp)
