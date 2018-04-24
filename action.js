@@ -53,7 +53,7 @@ function renderPar(data) {
     var totalIn = 0;
 
     for (i = 0; i < holes.length; i++) {
-      
+
         var eId = "par" + holes[i].hole;
         var parInserter = document.getElementById(eId);
         $(parInserter).empty();
@@ -85,7 +85,7 @@ function renderYardage() {
     for (i = 0; i < holes.length; i++) {
         var teeBoxes = holes[i].teeBoxes;
         var teeBox = teeBoxes.filter(function(e){
-        return e.teeType === teeBoxName;
+            return e.teeType === teeBoxName;
         })[0];
 
         var cellID = '#yard' + holes[i].hole;
@@ -114,6 +114,4 @@ function renderHand(data) {
 
 
     }
-    // document.getElementById(eId).innerHTML = htmlString;
 }
-

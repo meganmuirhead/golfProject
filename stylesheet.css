@@ -28,6 +28,7 @@ h1{
     margin: 5%;
 }
 .rTableCell, .rTableHead {
+    text-align: center;
     border: 1px solid #999999;
     float: left;
     height: 17px;
@@ -44,23 +45,3 @@ h1{
     clear: both;
     height: 0;
 }
-/*#blue{*/
-    /*background-color: blue;*/
-/*}*/
-/*#gold{*/
-    /*background-color: orange;*/
-/*}*/
-/*#red{*/
-    /*background-color: red;*/
-/*}*/
-/*#inBlue{*/
-    /*background-color: blue;*/
-
-/*}*/
-/*#inGold{*/
-    /*background-color: orange;*/
-/*}*/
-/*#inRed{*/
-    /*background-color: red;*/
-
-/*}*/
