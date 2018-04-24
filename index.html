@@ -22,7 +22,7 @@
             <div class="rTableCell"></div>
         </div>
         <div class="rTableRow">
-            <div class="rTableCell" id="blue"><select id="yf"><option>pro</option><option>champion</option><option>men</option><option>women</option></select></div>
+            <div class="rTableCell" id="blue"><select onchange="renderYardage()" id="yf"><option>pro</option><option>champion</option><option>men</option><option>women</option></select></div>
             <div class="rTableCell" id="yard1">1</div>
             <div class="rTableCell" id="yard2">2</div>
             <div class="rTableCell" id="yard3">3</div>
@@ -130,7 +130,7 @@
     </div>
     <div class="rTableRow">
         <div class="rTableCell" id="inBlue">Blue</div>
-        <div class="rTableCell" id="yard10" >10</div>
+        <div class="rTableCell" id="yard10">10</div>
         <div class="rTableCell" id="yard11">11</div>
         <div class="rTableCell" id="yard12">12</div>
         <div class="rTableCell" id="yard13">13</div>
@@ -140,7 +140,7 @@
         <div class="rTableCell" id="yard17">17</div>
         <div class="rTableCell" id="yard18">18</div>
         <div class="rTableCell">IN</div>
-        <div class="rTableCell">Total</div>
+        <div class="rTableCell" id="yardTot">Total</div>
     </div>
     <div class="rTableRow">
         <div class="rTableCell">Par</div>

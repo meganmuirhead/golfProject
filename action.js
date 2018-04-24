@@ -10,6 +10,7 @@ btn.addEventListener("click", function () {
 
         var ourData = JSON.parse(loadCourseData.responseText);
         console.log(ourData.data.holes);
+        courseData = ourData;
         renderPar(ourData);
 
     };
@@ -29,6 +30,7 @@ handBtn.addEventListener("click", function () {
 
         var ourData = JSON.parse(loadCourseData.responseText);
         console.log(ourData.data.holes);
+        courseData = ourData;
         renderHand(ourData);
 
 
@@ -75,11 +77,10 @@ function renderPar(data) {
 }
 
 
-function renderYardage(data) {
-    var htmlString = "";
-    var holes = data.data.holes;
-    var totalYardage = 0;
-    var teeBoxName = $('#yf').value;
+function renderYardage() {
+    var holes = courseData.data.holes;
+    var total = 0;
+    var teeBoxName = $('#yf').val();
 
     for (i = 0; i < holes.length; i++) {
         var teeBoxes = holes[i].teeBoxes;
@@ -87,16 +88,15 @@ function renderYardage(data) {
         return e.teeType === teeBoxName;
         })[0];
 
-        var cellID = 'yardage' + holes[i].hole;
+        var cellID = '#yard' + holes[i].hole;
+        $(cellID).empty();
+        $(cellID).append(teeBox.yards);
+        total += parseInt(teeBox.yards);
 
     }
-    var total = totalIn + totalOut;
-    $('#out1').empty();
-    $('#out1').append(totalOut);
-    $('#in1').empty();
-    $('#in1').append(totalIn);
-    $('#parTotal').empty();
-    $('#parTotal').append(total);
+    $('#yardTot').empty();
+    $('#yardTot').append(total);
+
 }
 
 
@@ -117,18 +117,3 @@ function renderHand(data) {
     // document.getElementById(eId).innerHTML = htmlString;
 }
 
-function totalBox() {
-    //need to get all the id input and add them together for the pars and the handicap
-    //need to insert that total into the total box
-
-};
-
-function selectPlayerLevel() {
-    //event listener on drop down menu
-    //whatever level selected will get that info and write to the div
-
-}
-
-function selectCourse() {
-
-};
