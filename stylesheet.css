@@ -1,6 +1,12 @@
 body {
     background-image: url("grass.jpg");
 }
+.container{
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
 .rTable {
     display: block;
     width: 100%;
@@ -8,9 +14,18 @@ body {
 .rTableHeading, .rTableBody, .rTableFoot, .rTableRow{
     clear: both;
 }
+
+h1{
+    text-align: center;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
 .rTableHead, .rTableFoot{
-    background-color: #DDD;
+    background-color: #000000;
     font-weight: bold;
+    margin: 5%;
 }
 .rTableCell, .rTableHead {
     border: 1px solid #999999;
@@ -19,6 +34,7 @@ body {
     overflow: hidden;
     padding: 3px 1.8%;
     width: 4.5%;
+
 }
 .rTable:after {
     visibility: hidden;
@@ -28,23 +44,23 @@ body {
     clear: both;
     height: 0;
 }
-#blue{
-    background-color: blue;
-}
-#gold{
-    background-color: orange;
-}
-#red{
-    background-color: red;
-}
-#inBlue{
-    background-color: blue;
+/*#blue{*/
+    /*background-color: blue;*/
+/*}*/
+/*#gold{*/
+    /*background-color: orange;*/
+/*}*/
+/*#red{*/
+    /*background-color: red;*/
+/*}*/
+/*#inBlue{*/
+    /*background-color: blue;*/
 
-}
-#inGold{
-    background-color: orange;
-}
-#inRed{
-    background-color: red;
+/*}*/
+/*#inGold{*/
+    /*background-color: orange;*/
+/*}*/
+/*#inRed{*/
+    /*background-color: red;*/
 
-}
+/*}*/
