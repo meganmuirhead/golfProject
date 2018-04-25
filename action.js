@@ -115,3 +115,9 @@ function renderHand(data) {
 
     }
 }
+
+function holeTotal(inputElement) {
+    var inputGpa = $(inputElement).parent().parent();
+
+}
+
