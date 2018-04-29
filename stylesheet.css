@@ -1,11 +1,12 @@
-/*body {*/
-    /*background-image: url("grass.jpg");*/
-/*}*/
+body {
+    background-image: url("grass.jpg");
+}
 .container{
     background-color: #ffffff;
     border: 1px solid black;
-    opacity: 0.6;
+    opacity: 0.8;
     filter: alpha(opacity=60);
+    margin: 5px;
 }
 .rTable {
     display: block;
@@ -18,22 +19,23 @@
 h1{
     text-align: center;
     background-color: #ffffff;
-    border: 1px solid black;
-    opacity: 0.6;
+    border: 2px solid black;
+    opacity: 0.7;
     filter: alpha(opacity=60);
 }
 .rTableHead, .rTableFoot{
     background-color: #000000;
     font-weight: bold;
-    margin: 5%;
+    margin;
 }
+
 .rTableCell, .rTableHead {
     text-align: center;
     border: 1px solid #999999;
     float: left;
-    height: 17px;
+    height: 19px;
     overflow: hidden;
-    padding: 3px 1.8%;
+    padding: 4px 1.8%;
     width: 4.5%;
 
 }
