@@ -1,8 +1,7 @@
-var btn = document.getElementById("btn")
 var courseData;
-var handBtn = document.getElementById("handbtn")
 
-btn.addEventListener("click", function () {
+
+function loadPar() {
     var loadCourseData = new XMLHttpRequest();
     loadCourseData.open('GET', 'https://uxcobra.com/golfapi/course11819.txt');
 
@@ -21,8 +20,9 @@ btn.addEventListener("click", function () {
         renderPar(courseData);
     }
 
-});
-handBtn.addEventListener("click", function () {
+};
+
+function handi() {
     var loadCourseData = new XMLHttpRequest();
     loadCourseData.open('GET', 'https://uxcobra.com/golfapi/course11819.txt');
 
@@ -42,8 +42,7 @@ handBtn.addEventListener("click", function () {
         renderHand(courseData);
     }
 
-});
-
+};
 
 function renderPar(data) {
     var htmlString = "";
