@@ -76,6 +76,7 @@ function renderPar(data) {
 }
 
 
+
 function renderYardage() {
     var holes = courseData.data.holes;
     var total = 0;
@@ -116,7 +117,15 @@ function renderHand(data) {
 }
 
 function holeTotal(inputElement) {
-    var inputGpa = $(inputElement).parent().parent();
+    var gparTableDiv = $(inputElement).parent().parent();
+    var theseMoFos = $(gparTableDiv).find("input");
+
+    for (var i = 1; i < theseMoFos.length; i++) {
+        var
+
+
+
+    }
 
 }
 
