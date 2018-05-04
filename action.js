@@ -121,20 +121,44 @@ function renderHand(data) {
 function holeTotal(inputElement) {
     var gparTableDiv = $(inputElement).parent().parent();
     var theseMoFos = $(gparTableDiv).find("input");
-    // console.log(theseMoFos);
-
+    var children = $(gparTableDiv).children();
     var tot = 0;
     for (var i = 1; i < theseMoFos.length; i++) {
         if (parseInt(theseMoFos[i].value))
             tot += parseInt(theseMoFos[i].value);
-        // console.log(theseMoFos[i].value);
-        // console.log(parseInt(theseMoFos[i].value));
     }
-    console.log(tot);
-    // document.getElementById('p1Tot').value = tot;
-    $('#p1Tot').empty();
-    $('#p1Tot').append(tot);
+    var rowTotalEl = $(gparTableDiv).find(".rowTotal");
+    // var lastEl = childrenOfGpa[childrenOfGpa.length - 1];
+    $(rowTotalEl).empty();
+    $(rowTotalEl).append(tot);
 
+    if (children.length === 11) {
+        let playerNameCellId = children[0].id;
+        let playerNumber = playerNameCellId.slice(5,12);
+        let backPlayerNameCellId = "back" + playerNumber;
+        let playerNameCell = $("#" + backPlayerNameCellId);
+        let backPlayerRow = playerNameCell.parent();
+        let backPlayerRowChildren = backPlayerRow.children();
+        let secondToLastIndex = backPlayerRowChildren.length - 2;
+        let lastIndex = backPlayerRowChildren.length - 1;
+        let backTotalCell = backPlayerRowChildren[secondToLastIndex];
+        let grandTotal = tot + parseInt(backTotalCell.innerHTML);
+        $(backPlayerRowChildren[lastIndex]).empty();
+        $(backPlayerRowChildren[lastIndex]).append(grandTotal);
+    } else if (children.length === 12) {
+        let playerNameCellId = children[0].id;
+        let playerNumber = playerNameCellId.slice(4,11);
+        let frontPlayerNameCellId = "front" + playerNumber;
+        let playerNameCell = $("#" + frontPlayerNameCellId);
+        let frontPlayerRow = playerNameCell.parent();
+        let frontPlayerRowChildren = frontPlayerRow.children();
+        let lastIndex = frontPlayerRowChildren.length - 1;
+        let frontTotalCell = frontPlayerRowChildren[lastIndex];
+        let grandTotal = tot + parseInt(frontTotalCell.innerHTML);
+        let grandTotalCell = $(children[children.length - 1]);
+        grandTotalCell.empty();
+        grandTotalCell.append(grandTotal);
+    }
 
 }
 
