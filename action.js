@@ -116,16 +116,25 @@ function renderHand(data) {
     }
 }
 
+
+
 function holeTotal(inputElement) {
     var gparTableDiv = $(inputElement).parent().parent();
     var theseMoFos = $(gparTableDiv).find("input");
+    // console.log(theseMoFos);
 
+    var tot = 0;
     for (var i = 1; i < theseMoFos.length; i++) {
-        var
-
-
-
+        if (parseInt(theseMoFos[i].value))
+            tot += parseInt(theseMoFos[i].value);
+        // console.log(theseMoFos[i].value);
+        // console.log(parseInt(theseMoFos[i].value));
     }
+    console.log(tot);
+    // document.getElementById('p1Tot').value = tot;
+    $('#p1Tot').empty();
+    $('#p1Tot').append(tot);
+
 
 }
 
