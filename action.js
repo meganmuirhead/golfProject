@@ -125,7 +125,7 @@ function holeTotal(inputElement) {
     var tot = 0;
     for (var i = 1; i < theseMoFos.length; i++) {
         if (parseInt(theseMoFos[i].value))
-            tot += parseInt(theseMoFos[i].value);
+            tot = tot + parseInt(theseMoFos[i].value);
     }
     var rowTotalEl = $(gparTableDiv).find(".rowTotal");
     // var lastEl = childrenOfGpa[childrenOfGpa.length - 1];

@@ -23,8 +23,8 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="400">
-                  <caret line="198" column="39" selection-start-line="198" selection-start-column="39" selection-end-line="198" selection-end-column="39" />
+                <state relative-caret-position="2174">
+                  <caret line="239" column="52" selection-start-line="239" selection-start-column="52" selection-end-line="239" selection-end-column="52" />
                 </state>
               </provider>
             </entry>
@@ -36,8 +36,8 @@
           <file leaf-file-name="action.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/action.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="489">
-                  <caret line="159" column="22" selection-start-line="159" selection-start-column="22" selection-end-line="159" selection-end-column="22" />
+                <state relative-caret-position="390">
+                  <caret line="149" column="20" selection-start-line="149" selection-end-line="150" />
                 </state>
               </provider>
             </entry>
@@ -84,8 +84,8 @@
         <option value="$PROJECT_DIR$/style2.css" />
         <option value="$PROJECT_DIR$/holes.txt" />
         <option value="$PROJECT_DIR$/stylesheet.css" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/action.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -196,11 +196,13 @@
       <workItem from="1525215872919" duration="6484000" />
       <workItem from="1525391648749" duration="2640000" />
       <workItem from="1525395514959" duration="2174000" />
+      <workItem from="1525445261417" duration="795000" />
+      <workItem from="1525538068221" duration="2509000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70698000" />
+    <option name="totallyTimeSpent" value="74002000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="28" y="63" width="1385" height="798" extended-state="0" />
@@ -252,6 +254,7 @@
         <option value="$PROJECT_DIR$/../rentalProperty/main.js" />
         <option value="$PROJECT_DIR$/../inclassClass/app.js" />
         <option value="$PROJECT_DIR$/../inclassClass/app2.js" />
+        <option value="$PROJECT_DIR$/../inclassClass/magazine.js" />
       </list>
     </option>
   </component>
@@ -571,17 +574,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/action.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="198" column="39" selection-start-line="198" selection-start-column="39" selection-end-line="198" selection-end-column="39" />
+        <state relative-caret-position="390">
+          <caret line="149" column="20" selection-start-line="149" selection-end-line="150" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/action.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="159" column="22" selection-start-line="159" selection-start-column="22" selection-end-line="159" selection-end-column="22" />
+        <state relative-caret-position="2174">
+          <caret line="239" column="52" selection-start-line="239" selection-start-column="52" selection-end-line="239" selection-end-column="52" />
         </state>
       </provider>
     </entry>
